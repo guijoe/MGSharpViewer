@@ -7,8 +7,8 @@ Hello world! Welcome to MG#Viewer, a Unity-based 3D viewer for simulations outpu
 ### Brief Description ###
 
 * The parent MG# project enables anyone with minimum or no programming experience to run biological simulations and visualise the results. 
-* MG#Core (https://github.com/guijoe/MGSharpCore) is the computational engine of MG#. It runs simulations and logs results into (custom) MG files and/or VTK files.
 * MG#Viewer is a Unity(https://unity.com/) based viewer allowing 3D visualisation of MG log files. VTK files can be viewed with third party tools like ParaView(https://www.paraview.org/).
+* MG#Core (https://github.com/guijoe/MGSharpCore) is the computational engine of MG#. It runs simulations and logs results into (custom) MG files and/or VTK files.
 
 ### Running a simulation with MG# ###
 
@@ -17,16 +17,16 @@ Hello world! Welcome to MG#Viewer, a Unity-based 3D viewer for simulations outpu
 * A simulation can only be runned from a "Main" code file (file with the "Main" function). The "Main" file must be compiled, and the resulting executable file runned. This goes without saying that the path to the file must be referenced, either by being in its parent directory or by explicitly specifying it in the file path.
     
 #### Windows
-	dotnet run
-	invagination.exe
+	dotnet build
+	bin/debug/invagination.exe
 	
 #### Linux 
-	dotnet run
-	./invagination
+	dotnet build
+	./bin/debug/invagination
 	
 #### Mac OS 
-    	dotnet run
-	./invagination
+    	dotnet build
+	./bin/debug/invagination
 
 ### Designing and programming a simulation ###
 
