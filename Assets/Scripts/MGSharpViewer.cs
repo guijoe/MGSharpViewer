@@ -281,7 +281,7 @@ namespace MGSharp.Viewer
                             string[] xyz = vec
                                                 //.Remove(vec.Length - 1)
                                                 //.Remove(0, 1)
-                                                .Split(',');
+                                                .Split(':');
 
                             if (cellStart == 1)
                             {
@@ -499,7 +499,7 @@ namespace MGSharp.Viewer
                 tris = new int[3 * nbOfTrianglesPerType[i]];
                 for (int j = 0; j < nbOfTrianglesPerType[i]; j++)
                 {
-                    string[] xyz = parameters[currentLine++].Split(',');
+                    string[] xyz = parameters[currentLine++].Split(':');
                     tris[3 * j] = int.Parse(xyz[0]);
                     tris[3 * j + 1] = int.Parse(xyz[1]);
                     tris[3 * j + 2] = int.Parse(xyz[2]);
